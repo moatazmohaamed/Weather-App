@@ -3,4 +3,5 @@ Simple API application using weather api, check the app flowchart to provide mor
 
 Tech Used : Html5 Bootstrap 5 Javascript 
 
-![app_flowchart](https://github.com/user-attachments/assets/09e3f165-a238-4292-be9e-f52db4d831ca)
+![image](https://github.com/user-attachments/assets/78de35da-42d2-447f-b6c8-2894599ba6ed)
+
