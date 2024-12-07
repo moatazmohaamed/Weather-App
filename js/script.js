@@ -46,7 +46,8 @@ searchInput.addEventListener(`keydown`, (e) => {
 });
 
 
-(function cuurentDate() {
+
+function currentDate() {
     const date = new Date()
 
     const dayOfWeek = date.getDay();
@@ -61,8 +62,7 @@ searchInput.addEventListener(`keydown`, (e) => {
 
     const currentDate = `${dayOfWeekName[dayOfWeek]}, ${dayOfMonth} ${monthNames[month]}`;
     todaysDate.textContent = currentDate;
-})();
-
+}
 
 function getData() {
     firstSearch.classList.add(`d-none`);
@@ -86,6 +86,7 @@ async function weatherAPI(location) {
 }
 
 function displayWeather(api) {
+    currentDate()
 
     countryName.textContent = api.location.country + ` Now`;
     dayTemp.textContent = Math.trunc(api.current.temp_c);
