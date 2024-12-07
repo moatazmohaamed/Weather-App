@@ -143,8 +143,6 @@ const userLocation = async () => {
         });
 }
 
-const loc = () => {
-    userLocation()
-}
+const loc = () => userLocation()
 
 navigator.geolocation.getCurrentPosition(loc)
