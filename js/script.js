@@ -99,12 +99,12 @@ function displayWeather(api) {
     let weather = ``;
 
     for (const day of filteredForecast) {
-        const dateTaken = new Date(day.date);
-        const dateOption = {
+        const  dateInfo = new Date(day.date);
+        const customizedDate = {
             day: `2-digit`,
             month: `short`
         }
-        const dateResult = dateTaken.toLocaleDateString(`en-US`, dateOption)
+        const dateResult = dateInfo.toLocaleDateString(`en-US`, customizedDate)
         weather += `<div class="col-6">
                 <div class="card py-3 text-center text-white d-flex justify-content-center">
                     <span id="nextDayDate" class="fs-5 fw-bold"> ${dateResult}</span>
